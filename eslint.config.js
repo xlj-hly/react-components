@@ -19,5 +19,14 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_', //忽略以下划线开头的未使用函数参数
+          varsIgnorePattern: '^_', //忽略以下划线开头的未使用变量
+        },
+      ],
+    },
   },
 ])
