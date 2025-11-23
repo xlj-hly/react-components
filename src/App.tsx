@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Nav from "./components/Nav";
-import PageTransition from "./components/PageTransition";
-import Home from "./pages/Home";
-import Archive from "./pages/Archive";
-import Contact from "./pages/Contact";
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import Nav from './components/Nav'
+import PageTransition from './components/PageTransition'
+import Home from './pages/Home'
+import Archive from './pages/Archive'
+import Contact from './pages/Contact'
 
 function AppContent() {
-  const location = useLocation();
+  const location = useLocation()
 
   return (
     <PageTransition>
@@ -17,7 +17,7 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </PageTransition>
-  );
+  )
 }
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <AppContent />
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
